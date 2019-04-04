@@ -1,0 +1,29 @@
+<docktype html>
+<head>
+<script src="lib/codemirror.js"></script>
+<link rel="stylesheet" href="lib/codemirror.css">
+<script src="mode/javascript/javascript.js"></script>
+</head>
+<body>
+<style>
+body {
+    background-color: #eee;
+}
+</style>
+<div style="width: 1000px; height: 1000px;">
+<center><div id="codeeditor"></div></center>
+</div>
+<script>
+
+var editor = CodeMirror(document.getElementById("codeeditor"))
+
+</script>
+<style type="text/css">
+    .codeeditor{
+      position:absolute;
+      top:0;
+      right:0;
+     }
+   </style>
+</body>
+</html>
