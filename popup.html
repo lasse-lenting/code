@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+<script src="lib/codemirror.js"></script>
+<link rel="stylesheet" href="lib/codemirror.css">
+<script src="mode/javascript/javascript.js"></script>
+<script src="mode/css/css.js"></script>
+<link rel="stylesheet" href="theme/seti.css">
+<div id="codeeditor" xml:id="rcorners2"></div>
+<style>
+#rcorners2 {
+  border-radius: 25px;
+ 
+}
+
+body {
+	background-color: #eee;
+}
+</style>
+</head>
+<body>
+<script>
+
+var editor = CodeMirror(document.getElementById("codeeditor"), {
+	value: "function testFunction() { \n\talert('hello world');\n\treturn true; \n}",
+	mode: "javascript",
+	theme: "seti"
+
+});
+editor.setSize(500, 300);
+</script>
+</body>
+</html>
