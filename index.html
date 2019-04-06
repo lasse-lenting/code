@@ -1,24 +1,20 @@
 <!doctype html>
 <head>
 <script src="lib/codemirror.js"></script>
-<link rel="stylesheet" href="lib/codemirror.css">
+<link href="lib/codemirror.css" rel="stylesheet" >
+<script src="mode/xml.js/xml.js"></script>
 <script src="mode/css/css.js"></script>
-<style>
-body {
-	background-color: #eee;
-}
-</style>
+<link href="theme/dracula.css" rel="stylesheet" >
 </head>
 <body>
-<div id="codeeditor"></div>
+	<textarea id="editor"><p>test</p></textarea>
 <script>
 
-var editor = CodeMirror(document.getElementById("codeeditor"), {
-	value: "#test {\n\tposition: absolute;\n\twidth: auto;\n\theight: 50px;\n}",
-	mode: "css",
-	tabSize: 5,
-	lineNumbers: true,
-	firstLineNumber: 50
+var editor = CodeMirror.fromTextArea
+	(document.getElementById('editor'), {
+	mode: "xml",
+	theme: "dracula"
+
 });
 </script>
 </body>
