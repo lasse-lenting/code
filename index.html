@@ -1,4 +1,4 @@
-<!doctype html>
+<<!doctype html>
 <head>
 <script src="codemirror/lib/codemirror.js"></script>
 <link href="codemirror/lib/codemirror.css" rel="stylesheet">
@@ -7,14 +7,28 @@
 <script src="codemirror/mode/css/css.js"></script>
 <script src="codemirror/mode/javascript/json-ld.html"></script>
 <link href="codemirror/theme/base16-light.css" rel="stylesheet">
-<center><div class="a">how to make a chrome extension</div></center>
+<div class="header"><center><div class="a">how to make a chrome extension</div></center></div>
+<p> <br> <br> <br> <br>
+	first you need to make a <textarea id="editor1">manifest.json</textarea>
+</p>
 </head>
 <body>
 <style>
-	body {
-		background-image: url("background.png");
-		background-repeat:  no-repeat fixed center;
-	}
+    body { 
+            background-image: url("background.png"); 
+            background-attachment: fixed; 
+            height:100px; 
+			width:100%; 
+			color:white;
+			overflow:scroll; }    
+			.header {
+  				padding: 2px;
+  				text-align: center;
+  				background: #000000;
+  				color: white;
+  				font-size: 70px;
+}
+    </style>
 </style>
 <textarea id="editor">{
 		"manifest_version": 2,
@@ -31,97 +45,20 @@
 		 "activeTab"
 		 ]
 	  }</textarea>
+
 <script>
 var editor = CodeMirror.fromTextArea
 	(document.getElementById('editor'), {
 	mode: "json-ld",
 	theme: "base16-light"
 });
-myCodeMirror.setSize(200, 300);
+var editor1 = CodeMirror.fromTextArea
+	(document.getElementById('editor1'), {
+	mode: "xml",
+	theme: "base16-light"
+});
+editor1.setSize(175, 40);
 </script>
 </body>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-<p>hi</p>
-
 </html>
 
